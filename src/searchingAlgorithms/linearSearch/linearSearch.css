@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@keyframes growFind {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  100% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.box {
+  position: relative;
+}
+
+.l-array-bar {
+  box-shadow: -2px -2px 5px white, 3px 3px 5px rgb(0 0 0 / 10%);
+  background-color: transparent !important;
+  display: inline-block;
+  margin: 5px;
+  color: #6376f1;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-linear {
+  background-color: #f16388 !important;
+  color: #fff;
+  box-shadow: inset -2px -2px 5px #daa7a7, inset 3px 3px 5px #c14545;
+}
+.search-linear-found {
+  transition: ease-in 300ms;
+  transform: scale(1.05);
+  color: #fff;
+  background-color: rgb(40, 180, 99) !important;
+  box-shadow: inset -2px -2px 5px #8df7ba, inset 3px 3px 5px green;
+}
+
+.l-array-bar span {
+  padding: 3px;
+  background-color: aquamarine;
+  color: #000;
+  margin-top: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 30px;
+}
+
+.found {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #137c41;
+}
+.not-found {
+  padding: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #b61717;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+.growFind {
+  /* animation-name: growFind;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+    animation-direction: normal; */
+
+  transition: ease-in 500ms;
+}
+
+.highlight {
+  transition: ease-in 300ms;
+  transform: scale(1.05);
+}
+.congrats-back {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}

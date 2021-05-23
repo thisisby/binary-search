@@ -1,0 +1,50 @@
+.user-bar {
+  margin: 5px;
+  color: #6376f1;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+.user-bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  box-shadow: -2px -2px 5px white, 3px 3px 5px rgb(0 0 0 / 10%);
+}
+
+.user-bar:hover {
+  box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 1),
+    inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.user-found {
+  background-color: rgb(40, 180, 99);
+  transition: 0.1s;
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: inset -2px -2px 5px #8df7ba, inset 3px 3px 5px green;
+}
+.user-bar.user-found:hover {
+  background-color: rgb(40, 180, 99);
+  box-shadow: inset -2px -2px 5px #8df7ba, inset 3px 3px 5px green;
+}
+.user-failed {
+  background-color: #f16388;
+  transition: 0.1s;
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: inset -2px -2px 5px #daa7a7, inset 3px 3px 5px #c14545;
+}
+.user-bar.user-failed:hover {
+  background-color: #f16388;
+  box-shadow: inset -2px -2px 5px #daa7a7, inset 3px 3px 5px #c14545;
+}
